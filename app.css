@@ -64,6 +64,14 @@ form input[type="text"]:hover, form input[type="text"]:focus {
     font-family: 'Poppins', sans-serif;
 }
 
+input[type="text"], input[type="submit"], textarea {
+    font-size: 16px;
+}
+
+input[type="submit"] {
+    -webkit-appearance: none; /* This removes the default iOS styling */
+    border-radius: 0;  
+}
 
 /* Focus state for input fields */
 form input[type="text"]:focus {
