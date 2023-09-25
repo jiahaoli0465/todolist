@@ -31,7 +31,18 @@ li {
 li {
     user-select: none;
 }
+#taskInput {
+    flex-grow: 1;  /* This will make the input take available space */
+    margin-right: 10px;  /* Adjust this value as needed */
+    background-color: #FEFCF7;
+    border: 1px solid #EDEAE6;  /* A subtle border to define the input */
+    padding: 5px 10px;  /* Some padding for better appearance */
+    transition: background-color 0.3s ease;  /* Smooth transition for hover effect */
+}
 
+#taskInput:hover {
+    background-color: #FDFBF9;
+}
 
 li, form {
     font-size: 1.1em; /* Slightly larger font size for list items and form */
@@ -50,6 +61,16 @@ li:hover {
 form, ul {
     margin: 2% 5%;
 }
+ul {
+    padding-left: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+} 
+li {
+    margin: 5px 0;  
+}
+
+
 
 /* Form container */
 /* Input fields */
@@ -72,6 +93,13 @@ input[type="submit"] {
     -webkit-appearance: none; /* This removes the default iOS styling */
     border-radius: 0;  
 }
+
+.input-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 10px;  
+}
+
 
 /* Focus state for input fields */
 form input[type="text"]:focus {
