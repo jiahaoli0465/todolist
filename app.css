@@ -39,6 +39,7 @@ li {
     padding: 4px 8px;   /* Some padding for better appearance */
     transition: background-color 0.3s ease;  /* Smooth transition for hover effect */
     height: 20px;
+    margin-bottom: 5px;
 }
 
 
