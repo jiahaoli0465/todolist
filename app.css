@@ -95,11 +95,11 @@ input[type="text"], input[type="submit"], textarea {
 }
 
 input[type="submit"] {
-    -webkit-appearance: none; /* This removes the default iOS styling */
+    /* -webkit-appearance: none;  */
+    font-family: Arial, Helvetica, sans-serif;
     border-radius: 0;  
     padding: 4px 8px;
-    font-size: 10px;
-    
+    font-size: 12px;
 }
 
 .input-wrapper {
