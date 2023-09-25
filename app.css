@@ -71,9 +71,10 @@ li {
 }
 
 
+label {
+    font-size: 14px;  /* Adjust this value to your preference */
+}
 
-/* Form container */
-/* Input fields */
 form input[type="text"] {
     border: 1px solid #a8a8a8; /* Muted border color */
     color: #4b4b4b; /* Text color inside the input */
