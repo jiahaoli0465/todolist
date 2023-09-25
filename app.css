@@ -1,0 +1,148 @@
+.crossed-out {
+    text-decoration: line-through;
+    text-decoration-thickness: 2px; /* Thicker line */
+    color: gray; /* Change text color */
+    opacity: 0.6; /* Reduced opacity */
+    font-style: italic; /* Italic font */
+    background-color: #ffcccc; /* Light red background */
+}
+
+
+body {
+    background-color: #FAF3E0; /* Soft beige */
+    font-family: Arial, Helvetica, sans-serif;
+    color: #5a5a5a; /* Muted shade of gray for text */
+}
+
+
+h1 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700; /* Using the bold weight for the title */
+    text-align: center;
+}
+
+
+li {
+    padding: 1% 0; /* This is a shorthand for padding-top and padding-bottom */
+    border-bottom: 1px solid #ddd; /* Adds a subtle border to each list item */
+    list-style-type: none; /* Removes the default bullet points */
+    transition: background-color 0.3s; /* Smooth transition for hover effect */
+}
+li {
+    user-select: none;
+}
+
+
+li, form {
+    font-size: 1.1em; /* Slightly larger font size for list items and form */
+    font-family: 'Poppins', sans-serif;
+}
+
+li:hover {
+    background-color: #f5f5f5; /* Adds a hover effect to list items */
+}
+
+.crossed-out {
+    text-decoration: line-through;
+    background-color: #ffe4b5; /* A slightly different shade for crossed-out items */
+}
+
+form, ul {
+    margin: 2% 5%;
+}
+
+/* Form container */
+/* Input fields */
+form input[type="text"] {
+    border: 1px solid #a8a8a8; /* Muted border color */
+    color: #4b4b4b; /* Text color inside the input */
+    font-family: 'Poppins', sans-serif;
+}
+
+form input[type="text"]:hover, form input[type="text"]:focus {
+    border-color: #7a7a7a; /* Slightly darker border on hover/focus */
+    font-family: 'Poppins', sans-serif;
+}
+
+
+/* Focus state for input fields */
+form input[type="text"]:focus {
+    border-color: #aaa; /* Slightly darker border for focus */
+    outline: none;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Submit button */
+/* Submit button styling */
+form input[type="submit"] {
+    padding: 5px 15px;
+    background-color: blanchedalmond; /* Using the same color as the crossed-out background for consistency */
+    border: 1px solid #ccc; /* Subtle border */
+    border-radius: 4px; /* Rounded corners */
+    color: #5a5a5a; /* Muted gray text color */
+    cursor: pointer; /* Hand cursor on hover */
+    transition: background-color 0.3s, color 0.3s; /* Smooth transition for hover effect */
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Hover state for the submit button */
+form input[type="submit"]:hover {
+    background-color: #e6c1c1; /* Slightly different shade for hover */
+    color: #333; /* Darker text on hover */
+}
+
+/* Active state (when the button is pressed) */
+form input[type="submit"]:active {
+    background-color: #d1a8a8; /* Even more different shade for active state */
+}
+
+
+/* Style for the list items */
+li.Todo {
+    display: flex;          /* Use flexbox to align items in a row */
+    justify-content: space-between; /* Push items to the start and end of the line */
+    align-items: center;    /* Vertically center the text and button */
+}
+
+/* Style for the "Remove" button */
+li.Todo button {
+    margin-left: 10px;      /* Add some space between the text and the button */
+    background-color: #f2dede; /* Soft red shade for the button */
+    border: 1px solid #e0e0e0;
+    border-radius: 4px;
+    padding: 5px 10px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+li.Todo button:hover {
+    background-color: #e6c1c1; /* Darker shade of red for hover */
+}
+
+
+/* Hide the default checkbox */
+.custom-checkbox {
+    display: none;
+}
+
+/* Create a custom box for the checkbox */
+.custom-checkbox + span::before {
+    content: "";
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+    border: 2px solid #5a5a5a;
+    border-radius: 4px;
+    vertical-align: middle;
+}
+
+/* Style for the checked state */
+.custom-checkbox:checked + span::before {
+    content: "✔";
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    line-height: 18px; /* Adjust based on the size of the checkbox */
+    color: #5a5a5a;
+}
