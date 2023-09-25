@@ -95,7 +95,7 @@ input[type="text"], input[type="submit"], textarea {
 }
 
 input[type="submit"] {
-    /* -webkit-appearance: none;  */
+    -webkit-appearance: none; 
     font-family: Arial, Helvetica, sans-serif;
     border-radius: 0;  
     padding: 4px 8px;
@@ -120,7 +120,7 @@ form input[type="text"]:focus {
 /* Submit button styling */
 form input[type="submit"] {
     padding: 5px 15px;
-    background-color: blanchedalmond; /* Using the same color as the crossed-out background for consistency */
+    background-color: rgb(255, 238, 212); /* Using the same color as the crossed-out background for consistency */
     border: 1px solid #ccc; /* Subtle border */
     border-radius: 4px; /* Rounded corners */
     color: #5a5a5a; /* Muted gray text color */
