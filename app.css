@@ -33,12 +33,15 @@ li {
 }
 #taskInput {
     flex-grow: 1;  /* This will make the input take available space */
-    margin-right: 10px;  /* Adjust this value as needed */
+    margin-right: 5px;  /* Adjust this value as needed */
     background-color: #FEFCF7;
     border: 1px solid #EDEAE6;  /* A subtle border to define the input */
-    padding: 5px 10px;  /* Some padding for better appearance */
+    padding: 4px 8px;   /* Some padding for better appearance */
     transition: background-color 0.3s ease;  /* Smooth transition for hover effect */
+    height: 20px;
 }
+
+
 
 #taskInput:hover {
     background-color: #FDFBF9;
@@ -79,6 +82,7 @@ form input[type="text"] {
     border: 1px solid #a8a8a8; /* Muted border color */
     color: #4b4b4b; /* Text color inside the input */
     font-family: 'Poppins', sans-serif;
+    font-size: 14px;
 }
 
 form input[type="text"]:hover, form input[type="text"]:focus {
@@ -93,6 +97,9 @@ input[type="text"], input[type="submit"], textarea {
 input[type="submit"] {
     -webkit-appearance: none; /* This removes the default iOS styling */
     border-radius: 0;  
+    padding: 4px 8px;
+    font-size: 10px;
+    
 }
 
 .input-wrapper {
